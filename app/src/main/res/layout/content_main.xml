@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.rafa.pdmdpaint.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/linearLayout">
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton2"
+            android:src="@drawable/ic_border_color_black_24dp"
+            style="@style/botones"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:onClick="linea"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton3"
+            android:src="@drawable/ic_gesture_black_24dp"
+            style="@style/botones"
+            android:onClick="curva"
+            android:layout_toRightOf="@+id/imageButton2"
+            android:layout_toEndOf="@+id/imageButton2"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton4"
+            android:src="@drawable/ic_format_paint_black_24dp"
+            style="@style/botones"
+            android:onClick="brocha"
+            android:layout_alignTop="@+id/imageButton3"
+            android:layout_toRightOf="@+id/imageButton3"
+            android:layout_toEndOf="@+id/imageButton3"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton8"
+            style="@style/botones"
+            android:src="@drawable/ic_fiber_manual_record_black_24dp"
+            android:onClick="circulo"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imageButton4"
+            android:layout_toEndOf="@+id/imageButton4"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton9"
+            style="@style/botones"
+            android:src="@drawable/ic_stop_black_24dp"
+            android:onClick="cuadrado"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imageButton8"
+            android:layout_toEndOf="@+id/imageButton8"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/layout"
+        android:layout_below="@+id/linearLayout">
+
+    </RelativeLayout>
+
+</RelativeLayout>
